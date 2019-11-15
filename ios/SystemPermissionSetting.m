@@ -1,14 +1,33 @@
 #import "SystemPermissionSetting.h"
+#import <UIKit/UIKit.h>
 
 
 @implementation SystemPermissionSetting
 
+- (dispatch_queue_t)methodQueue
+{
+    return dispatch_get_main_queue();
+}
+
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(sampleMethod:(NSString *)stringArgument numberParameter:(nonnull NSNumber *)numberArgument callback:(RCTResponseSenderBlock)callback)
+RCT_EXPORT_METHOD(showBrand)
 {
-    // TODO: Implement some actually useful functionality
-	callback(@[[NSString stringWithFormat: @"numberArgument: %@ stringArgument: %@", numberArgument, stringArgument]]);
+    
+}
+
+RCT_EXPORT_METHOD(showManufacturer)
+{
+    
+}
+
+RCT_EXPORT_METHOD(toSettingsPage)
+{
+    NSURL * url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+    if ([[UIApplication sharedApplication] canOpenURL:url]) {
+                NSURL*url =[NSURL URLWithString:UIApplicationOpenSettingsURLString];
+                [[UIApplication sharedApplication] openURL:url];
+    }
 }
 
 @end
