@@ -1,8 +1,6 @@
 # react-native-system-permission-setting
 
-## Getting started
 
-`$ npm install react-native-system-permission-setting --save`
 
 ### Mostly automatic installation
 
