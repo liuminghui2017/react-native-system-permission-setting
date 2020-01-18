@@ -1,5 +1,5 @@
 # react-native-system-permission-setting
-
+跳转系统权限设置页面
 
 
 ### Mostly automatic installation
