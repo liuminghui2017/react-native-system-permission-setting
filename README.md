@@ -34,8 +34,9 @@
 
 ## Usage
 ```javascript
-import SystemPermissionSetting from 'react-native-system-permission-setting';
+import RNSPS from 'react-native-system-permission-setting';
 
 // TODO: What to do with the module?
-SystemPermissionSetting;
+RNSPS;
+RNSPS.toSettingsPage()
 ```
