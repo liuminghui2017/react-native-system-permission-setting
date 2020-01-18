@@ -1,8 +1,6 @@
 # react-native-system-permission-setting
+跳转系统权限设置页面
 
-## Getting started
-
-`$ npm install react-native-system-permission-setting --save`
 
 ### Mostly automatic installation
 
@@ -36,8 +34,9 @@
 
 ## Usage
 ```javascript
-import SystemPermissionSetting from 'react-native-system-permission-setting';
+import RNSPS from 'react-native-system-permission-setting';
 
 // TODO: What to do with the module?
-SystemPermissionSetting;
+RNSPS;
+RNSPS.toSettingsPage()
 ```
