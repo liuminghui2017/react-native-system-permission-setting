@@ -1,4 +1,4 @@
-package com.rickl.reactlibrary;
+package com.rickl.permission.settingpage;
 
 import java.util.Arrays;
 import java.util.Collections;

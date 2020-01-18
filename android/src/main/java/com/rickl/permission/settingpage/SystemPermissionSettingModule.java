@@ -1,4 +1,4 @@
-package com.rickl.reactlibrary;
+package com.rickl.permission.settingpage;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
