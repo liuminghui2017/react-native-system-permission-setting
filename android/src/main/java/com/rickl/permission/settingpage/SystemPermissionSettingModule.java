@@ -40,6 +40,13 @@ public class SystemPermissionSettingModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public void goHome() {
+        Intent backHome = new Intent(Intent.ACTION_MAIN);
+        backHome.addCategory(Intent.CATEGORY_HOME);
+        reactContext.startActivity(backHome);
+    }
+
+    @ReactMethod
     public void toSettingsPage() {
         gotoAppDetailSetting();
         // switch (MANUFACTURER) {
