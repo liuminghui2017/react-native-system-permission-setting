@@ -21,6 +21,16 @@ RCT_EXPORT_METHOD(showManufacturer)
     
 }
 
+RCT_EXPORT_METHOD(exitApp)
+{
+    exit(0);
+}
+
+RCT_EXPORT_METHOD(goHome)
+{
+    
+}
+
 RCT_EXPORT_METHOD(toSettingsPage)
 {
     NSURL * url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];

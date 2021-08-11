@@ -40,6 +40,11 @@ public class SystemPermissionSettingModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public void exitApp() {
+        android.os.Process.killProcess(android.os.Process.myPid());
+    }
+
+    @ReactMethod
     public void goHome() {
         Intent backHome = new Intent(Intent.ACTION_MAIN);
         backHome.addCategory(Intent.CATEGORY_HOME);
